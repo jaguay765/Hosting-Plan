@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Checkout</title>
+</head>
+<style>
+     body{
+        background-color:chartreuse;
+	    padding: 0;
+        font-family: 'Architects Daughter', cursive;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .form{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: 50px;
+        padding: 0;
+        transform: scale(1.25,1.25);
+    }
+
+    .header{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        color: black;
+    }
+</style>
+<body>
+    <div class="header">
+    </div>
+    <div class="form" >
+        <h1>Sign Up Now!</h1>
+        <form name="registration" onSubmit="return validation();">
+                    <label>First Name:</label></br>
+                    <input type="text" placeholder="First Name" name="fname"></input></br>
+                    <label>Last Name:</label></br>
+                    <input type="text" placeholder="Last Names" name="lname"></input></br>
+                    <label>Monthly Plan</label></br>
+                    <select name="gname">
+                    <option selected="" value="Default">Select</option>
+                    <option>Basic</option>
+                    <OPTION>Proffesional</OPTION>
+                    <OPTION>Ultimate</OPTION></select></br>
+                    <label>Number</label></br>
+                    <input type="text" placeholder="Mobile Number" name="number"></input>
+                    <input type="submit" value="Submit" name="Submit"></input>
+            </form>
+        </form>
+    </div>
+</body>
+</html>
